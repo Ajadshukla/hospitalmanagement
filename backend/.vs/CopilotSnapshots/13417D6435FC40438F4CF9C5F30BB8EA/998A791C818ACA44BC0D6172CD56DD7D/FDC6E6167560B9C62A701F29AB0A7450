@@ -1,0 +1,153 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using WebApplication1_hospital_.DTOs;
+using WebApplication1_hospital_.Models;
+
+namespace WebApplication1_hospital_.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AppointmentsController : ControllerBase
+    {
+        private readonly HospitalContext _context;
+
+        public AppointmentsController(HospitalContext context)
+        {
+            _context = context;
+        }
+
+        // GET: api/appointments
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var data = _context.Appointments
+                .Select(a => new
+                {
+                    a.Id,
+                    a.DoctorId,
+                    a.PatientId,
+                    a.AppointmentDate,
+                    a.Status,
+                    DoctorName = a.Doctor.Name,
+                    PatientName = a.Patient.Name
+                })
+                .ToList();
+
+            return Ok(data);
+        }
+
+        // GET: api/appointments/5
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var a = _context.Appointments
+                .Include(x => x.Doctor)
+                .Include(x => x.Patient)
+                .FirstOrDefault(x => x.Id == id);
+
+            if (a == null) return NotFound();
+
+            return Ok(new
+            {
+                a.Id,
+                a.DoctorId,
+                a.PatientId,
+                a.AppointmentDate,
+                a.Status,
+                DoctorName = a.Doctor.Name,
+                PatientName = a.Patient.Name
+            });
+        }
+
+        // GET: api/appointments/summary
+        [HttpGet("summary")]
+        public IActionResult GetSummary()
+        {
+            var data = _context.Appointments
+                .Select(a => new
+                {
+                    a.Id,
+                    DoctorName = a.Doctor.Name,
+                    PatientName = a.Patient.Name,
+                    a.AppointmentDate,
+                    a.Status
+                })
+                .ToList();
+
+            return Ok(data);
+        }
+
+        // POST: api/appointments
+        [HttpPost]
+        public IActionResult Create([FromBody] AppointmentCreateDto dto)
+        {
+            var appointment = new Appointment
+            {
+                DoctorId = dto.DoctorId,
+                PatientId = dto.PatientId,
+                AppointmentDate = dto.AppointmentDate,
+                Status = dto.Status
+            };
+
+            _context.Appointments.Add(appointment);
+            _context.SaveChanges();
+
+            // Return with names
+            var doctor = _context.Doctors.Find(dto.DoctorId);
+            var patient = _context.Patients.Find(dto.PatientId);
+
+            return Ok(new
+            {
+                appointment.Id,
+                appointment.DoctorId,
+                appointment.PatientId,
+                appointment.AppointmentDate,
+                appointment.Status,
+                DoctorName = doctor?.Name,
+                PatientName = patient?.Name
+            });
+        }
+
+        // PUT: api/appointments/5
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, [FromBody] AppointmentCreateDto dto)
+        {
+            var appointment = _context.Appointments.Find(id);
+            if (appointment == null) return NotFound();
+
+            appointment.DoctorId = dto.DoctorId;
+            appointment.PatientId = dto.PatientId;
+            appointment.AppointmentDate = dto.AppointmentDate;
+            appointment.Status = dto.Status;
+
+            _context.SaveChanges();
+
+            var doctor = _context.Doctors.Find(dto.DoctorId);
+            var patient = _context.Patients.Find(dto.PatientId);
+
+            return Ok(new
+            {
+                appointment.Id,
+                appointment.DoctorId,
+                appointment.PatientId,
+                appointment.AppointmentDate,
+                appointment.Status,
+                DoctorName = doctor?.Name,
+                PatientName = patient?.Name
+            });
+        }
+
+        // DELETE: api/appointments/5
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var appointment = _context.Appointments.Find(id);
+            if (appointment == null) return NotFound();
+
+            _context.Appointments.Remove(appointment);
+            _context.SaveChanges();
+            return NoContent();
+        }
+    }
+}

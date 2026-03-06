@@ -1,0 +1,12 @@
+# ─── Build Settings ──────────────────────────────────────────────────────────
+[build]
+  base    = "hospital-frontend"
+  command = "npm run build"
+  publish = "dist/hospital-frontend/browser"
+
+# ─── SPA Routing ─────────────────────────────────────────────────────────────
+# Serve index.html for all routes so Angular router works on direct URL / refresh
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200

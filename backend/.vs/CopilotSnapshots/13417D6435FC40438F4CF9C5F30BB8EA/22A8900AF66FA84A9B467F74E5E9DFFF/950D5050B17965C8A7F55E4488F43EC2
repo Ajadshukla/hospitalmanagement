@@ -1,0 +1,55 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using WebApplication1_hospital_.DTOs;
+using WebApplication1_hospital_.Models;
+
+namespace WebApplication1_hospital_.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AppointmentsController : ControllerBase
+    {
+
+        private readonly HospitalContext _context;
+        public AppointmentsController(HospitalContext context)
+        {
+            _context = context;
+        }
+
+        [HttpPost]
+
+        public IActionResult Create(AppointmentCreateDto dto)
+        {
+            var appointment = new Appointment
+            {
+                DoctorId = dto.DoctorId,
+                PatientId = dto.PatientId,
+                AppointmentDate = dto.AppointmentDate,
+                Status = dto.Status
+            };
+            // Add to DbSet
+            _context.Appointments.Add(appointment);
+
+            // Save to database
+            _context.SaveChanges();
+
+            return Ok(appointment);
+        }
+
+        [HttpGet("summary")]
+        public IActionResult GetSummary()
+        {
+            var data = _context.Appointments
+                .Select(a => new
+                {
+                    DoctorName = a.Doctor.Name,
+                    PatientName = a.Patient.Name,
+                    a.AppointmentDate,
+                    a.Status
+                })
+                .ToList();
+
+            return Ok(data);
+        }
+    }
+}

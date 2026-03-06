@@ -1,0 +1,9 @@
+## Backend — Secrets & Build Artifacts
+backend/WebApplication1(hospital)/bin/
+backend/WebApplication1(hospital)/obj/
+backend/.vs/
+backend/**/*.user
+backend/**/appsettings.*.json
+
+# Keep the main appsettings.json but DO NOT commit real passwords.
+# Use environment variables in Railway for production secrets.

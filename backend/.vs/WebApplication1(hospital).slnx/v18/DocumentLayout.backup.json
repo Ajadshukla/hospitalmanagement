@@ -1,0 +1,128 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|c:\\users\\ajads\\desktop\\14hospitalmanagement\\webapplication1(hospital)\\webapplication1(hospital)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|solutionrelative:webapplication1(hospital)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|c:\\users\\ajads\\desktop\\14hospitalmanagement\\webapplication1(hospital)\\webapplication1(hospital)\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|solutionrelative:webapplication1(hospital)\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|c:\\users\\ajads\\desktop\\14hospitalmanagement\\webapplication1(hospital)\\webapplication1(hospital)\\dtos\\appointmentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|solutionrelative:webapplication1(hospital)\\dtos\\appointmentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|c:\\users\\ajads\\desktop\\14hospitalmanagement\\webapplication1(hospital)\\webapplication1(hospital)\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|solutionrelative:webapplication1(hospital)\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|c:\\users\\ajads\\desktop\\14hospitalmanagement\\webapplication1(hospital)\\webapplication1(hospital)\\webapplication1(hospital).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|solutionrelative:webapplication1(hospital)\\webapplication1(hospital).csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|c:\\users\\ajads\\desktop\\14hospitalmanagement\\webapplication1(hospital)\\webapplication1(hospital)\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E29010FA-45CE-AEA9-9737-10D21FF335E0}|WebApplication1(hospital)\\WebApplication1(hospital).csproj|solutionrelative:webapplication1(hospital)\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1(hospital)\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\appsettings.json",
+              "RelativeToolTip": "WebApplication1(hospital)\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-26T17:53:35.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1(hospital)\\Program.cs",
+              "ToolTip": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\Program.cs",
+              "RelativeToolTip": "WebApplication1(hospital)\\Program.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T17:57:57.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebApplication1(hospital).csproj",
+              "DocumentMoniker": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\WebApplication1(hospital).csproj",
+              "RelativeDocumentMoniker": "WebApplication1(hospital)\\WebApplication1(hospital).csproj",
+              "ToolTip": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\WebApplication1(hospital).csproj",
+              "RelativeToolTip": "WebApplication1(hospital)\\WebApplication1(hospital).csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-26T18:20:22.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppointmentCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\DTOs\\AppointmentCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1(hospital)\\DTOs\\AppointmentCreateDto.cs",
+              "ToolTip": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\DTOs\\AppointmentCreateDto.cs",
+              "RelativeToolTip": "WebApplication1(hospital)\\DTOs\\AppointmentCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:21:28.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "WebApplication1(hospital)\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "WebApplication1(hospital)\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T18:23:41.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebApplication1(hospital)\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Ajads\\Desktop\\14hospitalmanagement\\WebApplication1(hospital)\\WebApplication1(hospital)\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebApplication1(hospital)\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-26T19:04:50.849Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
