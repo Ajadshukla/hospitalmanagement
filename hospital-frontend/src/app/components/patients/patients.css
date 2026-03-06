@@ -1,0 +1,19 @@
+.gender-badge {
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}
+
+.gender-male {
+	background: #e0f2fe;
+	color: #0369a1;
+}
+
+.gender-female {
+	background: #fde2e2;
+	color: #be123c;
+}
+
+.gender-other {
+	background: #fef9c3;
+	color: #a16207;
+}
